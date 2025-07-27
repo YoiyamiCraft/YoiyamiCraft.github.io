@@ -540,6 +540,66 @@ body {
     pointer-events: auto; /* コントロールの操作を可能にする */
 }
 
+/* --- 利用規約ページ (terms.html用) --- */
+.terms-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--color-accent-purple);
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: left; /* テキストを左寄せに */
+}
+
+.terms-content h3 {
+    font-size: 1.8em;
+    color: var(--color-highlight);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed rgba(var(--color-main-purple), 0.5); /* 見出しの下に破線 */
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+
+.terms-content h3:first-of-type {
+    margin-top: 0; /* 最初の見出しの上の余白をなくす */
+}
+
+.terms-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--color-light-text);
+    font-weight: normal;
+}
+
+.terms-content ul {
+    list-style-type: disc; /* 黒丸リスト */
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.terms-content ol {
+    list-style-type: decimal; /* 番号付きリスト */
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.terms-content ul li,
+.terms-content ol li {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: var(--color-light-text);
+    font-weight: normal;
+}
+
+.terms-content .last-updated {
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--color-main-purple);
+    margin-top: 40px;
+}
 
 /* リンクセクション */
 .link-grid {
@@ -729,5 +789,22 @@ body {
     .link-card {
         width: 100%;
         max-width: 300px;
+    }
+
+    .terms-content {
+        padding: 25px;
+    }
+
+    .terms-content h3 {
+        font-size: 1.5em;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .terms-content p,
+    .terms-content ul li,
+    .terms-content ol li {
+        font-size: 1em;
+        line-height: 1.7;
     }
 }
